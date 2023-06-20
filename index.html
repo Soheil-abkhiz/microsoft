@@ -16,7 +16,7 @@
       <!--start menu-->
       <div class="menu">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
           <!-- Container wrapper -->
           <div class="container-fluid plMenu">
             <!-- Toggle button -->
@@ -40,10 +40,10 @@
             >
               <!-- Left links -->
               <ul
-                class="navbar-nav me-auto mb-2 mb-lg-0"
+                class="navbar-nav me-auto mb-2 mb-md-0"
                 style="height: 20px; line-height: 20px"
               >
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <a class="navbar-brand mt-2 mt-md-0" href="#">
                   <img
                     src="./imgas/logo.png"
                     height="25"
@@ -93,7 +93,7 @@
             <!-- Right elements -->
             <div class="d-flex align-items-center">
               <ul
-                class="navbar-nav me-auto mb-2 mb-lg-0 prMenu align-items-center p-0"
+                class="navbar-nav me-auto mb-2 mb-md-0 prMenu align-items-center p-0"
               >
                 <!-- Navbar dropdown -->
                 <li class="nav-item dropdown position-static">
@@ -275,229 +275,473 @@
         </nav>
         <!-- Navbar -->
       </div>
-      <!--end menu-->
-      <!--start make slider-->
-      <div class="slider">
+      <div class="second-menu container-fluid p-0">
         <div
-          id="carouselExampleCrossfade"
-          class="carousel slide carousel-fade"
-          data-mdb-ride="carousel"
+          class="flex-row d-flex justify-content-between align-items-center pt-3 pb-3"
         >
-          <div class="carousel-indicators">
+          <div
+            class="left-menu ms-3 d-flex align-items-center justify-content-center"
+          >
+            <span class="justifyMenu"
+              ><i class="d-block fs-3 bi-justify"></i
+            ></span>
+            <span><i class="ps-3 fs-5 bi bi-search"></i></span>
+          </div>
+          <div class="logo">
+            <span>
+              <img style="height: 30px" src="./imgas/logo.png" />
+            </span>
+          </div>
+          <div class="login me-3">
+            <span><i class="bi bi-cart fs-4 pe-4"></i></span>
+            <span class=""
+              ><i
+                style="border: solid 1px #6b6b6b"
+                class="bi bi-person fs-4 rounded-circle p-1"
+              ></i>
+            </span>
+          </div>
+        </div>
+        <div class="submenu">
+          <ul class="list-unstyled col-12 styleMenu">
+            <li class="p-3 styleMenu">microsoft 365</li>
+            <li class="p-3 styleMenu">teams</li>
+            <li class="p-3 styleMenu">windows</li>
+            <li class="p-3 styleMenu">surface</li>
+            <li class="p-3 styleMenu">xbox</li>
+            <li class="p-3 styleMenu">deals</li>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item " style="border: none">
+                <h2 class="accordion-header s" id="headingOne">
+                  <button
+                    class="accordion-button ps-3 rounded-0 styleMenu"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    style="background-color: #f2f2f2; color: #2b2b2b; border-bottom: solid 1px #e6e6e6;"
+                  >
+                    software
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-mdb-parent="#accordionExample"
+                >
+                  <div class="accordion-body styleMenu py-0">
+                    <li class="py-3 ps-3 styleMenu">windows apps</li>
+                    <li class="py-3 ps-3 styleMenu">al</li>
+                    <li class="py-3 ps-3 styleMenu">outlook</li>
+                    <li class="py-3 ps-3 styleMenu">onedrive</li>
+                    <li class="py-3 ps-3 styleMenu">microsoft teams</li>
+                    <li class="py-3 ps-3 styleMenu">oneNote</li>
+                    <li class="py-3 ps-3 styleMenu">microsoft edge</li>
+                    <li class="py-3 ps-3 styleMenu">skype</li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed ps-3 rounded-0 styleMenu"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                    style="background-color: #f2f2f2; color: #2b2b2b; border-bottom: solid 1px #e6e6e6;"
+                  >
+                    PCs & devices
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-mdb-parent="#accordionExample"
+                >
+                  <div class="accordion-body styleMenu py-0">
+                    <li class="py-3 ps-3 styleMenu">computer</li>
+                    <li class="py-3 ps-3 styleMenu">shop Xbox</li>
+                    <li class="py-3 ps-3 styleMenu">accessories</li>
+                    <li class="py-3 ps-3 styleMenu">vR & mixed reality</li>
+                    <li class="py-3 ps-3 styleMenu">microsoft teams</li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed ps-3 rounded-0 styleMenu"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    style="background-color: #f2f2f2; color: #2b2b2b; border-bottom: solid 1px #e6e6e6;"
+                  >
+                    entertainment
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-mdb-parent="#accordionExample"
+                >
+                <div class="accordion-body styleMenu py-0">
+                  <li class="py-3 ps-3 styleMenu">xbox game pass ultimate</li>
+                  <li class="py-3 ps-3 styleMenu">pC game pass</li>
+                  <li class="py-3 ps-3 styleMenu">xbox games</li>
+                  <li class="py-3 ps-3 styleMenu">pC game</li>
+                  <li class="py-3 ps-3 styleMenu">windows digital games</li>
+                  <li class="py-3 ps-3 styleMenu">movies & TV</li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed ps-3 rounded-0 styleMenu"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    style="background-color: #f2f2f2; color: #2b2b2b; border-bottom: solid 1px #e6e6e6;"
+                  >
+                    business
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-mdb-parent="#accordionExample"
+                >
+                <div class="accordion-body styleMenu py-0">
+                  <li class="py-3 ps-3 styleMenu">microsoft Cloud</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft security</li>
+                  <li class="py-3 ps-3 styleMenu">dynamics 365</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft 365 for business</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft power platform</li>
+                  <li class="py-3 ps-3 styleMenu">windows 365</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft industry</li>
+                  <li class="py-3 ps-3 styleMenu">small business</li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed ps-3 rounded-0 styleMenu"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    style="background-color: #f2f2f2; color: #2b2b2b; border-bottom: solid 1px #e6e6e6;"
+                  >
+                  developer & IT
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-mdb-parent="#accordionExample"
+                >
+                <div class="accordion-body styleMenu py-0">
+                  <li class="py-3 ps-3 styleMenu">azure</li>
+                  <li class="py-3 ps-3 styleMenu">developer center</li>
+                  <li class="py-3 ps-3 styleMenu">documentation</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft learn</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft tech community</li>
+                  <li class="py-3 ps-3 styleMenu">azure marketplace</li>
+                  <li class="py-3 ps-3 styleMenu">appSource</li>
+                  <li class="py-3 ps-3 styleMenu">visualStudio</li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed ps-3 rounded-0 styleMenu"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                    style="background-color: #f2f2f2; color: #2b2b2b; border-bottom: solid 1px #e6e6e6;"
+                  >
+                    other
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-mdb-parent="#accordionExample"
+                >
+                <div class="accordion-body styleMenu py-0">
+                  <li class="py-3 ps-3 styleMenu">microsoft reward</li>
+                  <li class="py-3 ps-3 styleMenu">free downloads * security</li>
+                  <li class="py-3 ps-3 styleMenu">education</li>
+                  <li class="py-3 ps-3 styleMenu">trade-in-for cash</li>
+                  <li class="py-3 ps-3 styleMenu">gift cards</li>
+                  <li class="py-3 ps-3 styleMenu">students and parents deals</li>
+                  <li class="py-3 ps-3 styleMenu">licensing</li>
+                  <li class="py-3 ps-3 styleMenu">microsoft experience center</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li style="border-bottom:solid 1px #2b2b2b;" class="ps-3 py-3">view sitemap</li>
+          </ul>
+        </div>
+      </div>
+        <!--end menu-->
+        <!--start make slider-->
+        <div class="slider">
+          <div
+            id="carouselExampleCrossfade"
+            class="carousel slide carousel-fade"
+            data-mdb-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                style="background-color: black"
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                style="background-color: black"
+                type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./imgas/slider one/1.jpg"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./imgas/slider one/2.avif"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+            </div>
             <button
-              style="background-color: black"
+              class="carousel-control-prev"
               type="button"
               data-mdb-target="#carouselExampleCrossfade"
-              data-mdb-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+              data-mdb-slide="prev"
+            >
+              <span class="bi bi-chevron-left arrow"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
             <button
-              style="background-color: black"
+              class="carousel-control-next"
               type="button"
               data-mdb-target="#carouselExampleCrossfade"
-              data-mdb-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
+              data-mdb-slide="next"
+            >
+              <span class="bi bi-chevron-right arrow"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./imgas/slider one/1.jpg"
-                class="d-block w-100"
-                alt=""
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./imgas/slider one/2.avif"
-                class="d-block w-100"
-                alt=""
-              />
+        </div>
+        <!--end make slider-->
+        <!-- make container -->
+        <div class="devices pt-5">
+          <div class="row m-0 justify-content-center">
+            <div class="d-flex flex-wrap m-0 justify-content-center">
+              <div class="col-lg-2 col-md-3 col-6">
+                <img
+                  src="./imgas/contanier-1/surface-go2-link-list-120x120.webp"
+                  class="d-block mb-2 m-auto img-fluid"
+                />
+                <a
+                  href="#"
+                  class="d-block text-center text-decoration-underline fw-bold text-capitalize"
+                  style="font-size: 13px; color: #0067b8"
+                  >shop surface diveces</a
+                >
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <img
+                  src="./imgas/contanier-1/windows.webp"
+                  class="d-block mb-2 m-auto img-fluid"
+                />
+                <a
+                  href="#"
+                  class="d-block text-center text-decoration-underline fw-bold text-capitalize"
+                  style="font-size: 13px; color: #0067b8"
+                  >choose your microsoft 365</a
+                >
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <img
+                  src="./imgas/contanier-1/xbox.webp"
+                  class="d-block mb-2 m-auto img-fluid"
+                />
+                <a
+                  href="#"
+                  class="d-block text-center text-decoration-underline fw-bold text-capitalize"
+                  style="font-size: 13px; color: #0067b8"
+                  >buy Xbox games and consoles</a
+                >
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <img
+                  src="./imgas/contanier-1/windows.webp"
+                  class="d-block mb-2 m-auto img-fluid"
+                />
+                <a
+                  href="#"
+                  class="d-block text-center text-decoration-underline fw-bold text-capitalize"
+                  style="font-size: 13px; color: #0067b8"
+                  >get windows 11</a
+                >
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <img
+                  src="./imgas/contanier-1/keyboard.webp"
+                  class="d-block mb-2 m-auto img-fluid"
+                />
+                <a
+                  href="#"
+                  class="d-block text-center text-decoration-underline fw-bold text-capitalize"
+                  style="font-size: 13px; color: #0067b8"
+                  >shop for accessories</a
+                >
+              </div>
+              <div class="col-lg-2 col-md-4 col-6">
+                <img
+                  src="./imgas/contanier-1/bag.webp"
+                  class="d-block mb-2 m-auto img-fluid"
+                />
+                <a
+                  href="#"
+                  class="d-block text-center text-decoration-underline fw-bold text-capitalize"
+                  style="font-size: 13px; color: #0067b8"
+                  >shop business</a
+                >
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-mdb-target="#carouselExampleCrossfade"
-            data-mdb-slide="prev"
+        </div>
+        <!-- end make container -->
+        <!--start make posts-->
+        <div class="container-fluid p-0 col-11">
+          <div class="posts mt-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <img class="img-fluid w-100" src="./imgas/posts/1.webp" />
+                <h2 class="text-capitalize fontH2">
+                  save up to $400 on surface laptop 5
+                </h2>
+                <p class="fontP">
+                  Sophisticated style and multitasking speed powered by 12th Gen
+                  Intel® Core. Offer ends 6/18.
+                </p>
+                <a href="#" class="fw-bold text-capitalize"
+                  >shop surface laptop 5
+                  <i class="bi bi-chevron-right arrow arrowA"></i
+                ></a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <img class="img-fluid w-100" src="./imgas/posts/2.webp" />
+                <h2 class="text-capitalize fontH2">
+                  Up to $150 off select Surface Laptop Go 2
+                </h2>
+                <p class="fontP">
+                  Work and play anywhere with the perfect balance of style,
+                  portability, and performance. Offer ends 6/25.
+                </p>
+                <a href="#" class="fw-bold text-capitalize"
+                  >shop surface laptop go 2
+                  <i class="bi bi-chevron-right arrow arrowA"></i
+                ></a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <img class="img-fluid w-100" src="./imgas/posts/3.avif" />
+                <h2 class="text-capitalize fontH2">
+                  Announcing the next wave of AI innovation
+                </h2>
+                <p class="fontP">
+                  The new Microsoft Bing and Edge will soon feature more visual
+                  search responses, chat history, and persistent chat within
+                  Edge. We’re also adding actions to help people complete tasks.
+                </p>
+                <a href="#" class="fw-bold text-capitalize"
+                  >learn more about it
+                  <i class="bi bi-chevron-right arrow arrowA"></i
+                ></a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <img class="img-fluid w-100" src="./imgas/posts/4.avif" />
+                <h2 class="text-capitalize fontH2">Power your dreams</h2>
+                <p class="fontP">
+                  Introducing Xbox Series S in Carbon Black, now with a 1 TB
+                  SSD.Experience next-gen speed and performance.
+                </p>
+                <a href="#" class="fw-bold text-capitalize"
+                  >pre-order-now <i class="bi bi-chevron-right arrow arrowA"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end make posts-->
+        <!--start xbox shop-->
+        <div class="xbox container-fluid col-11 p-0 mt-5">
+          <div
+            style="
+              background-image: url(./imgas/xbox/xbox.avif);
+              height: 90vh;
+              text-align: center;
+              margin-top: auto;
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+            class="xbox-one col-12 d-flex justify-content-center flex-column align-items-end"
           >
-            <span class="bi bi-chevron-left arrow"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-mdb-target="#carouselExampleCrossfade"
-            data-mdb-slide="next"
-          >
-            <span class="bi bi-chevron-right arrow"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <!--end make slider-->
-      <!-- make container -->
-      <div class="devices pt-5">
-        <div class="row m-0 justify-content-center">
-          <div class="d-flex flex-wrap m-0 justify-content-center">
-            <div class="col-lg-2 col-md-3 col-6 ">
-              <img
-                src="./imgas/contanier-1/surface-go2-link-list-120x120.webp"
-                class="d-block mb-2 m-auto img-fluid"
-              />
-              <a
-                href="#"
-                class="d-block text-center text-decoration-underline fw-bold text-capitalize"
-                style="font-size: 13px; color: #0067b8"
-                >shop surface diveces</a
-              >
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="./imgas/contanier-1/windows.webp"
-                class="d-block mb-2 m-auto img-fluid"
-              />
-              <a
-                href="#"
-                class="d-block text-center text-decoration-underline fw-bold text-capitalize"
-                style="font-size: 13px; color: #0067b8"
-                >choose your microsoft 365</a
-              >
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="./imgas/contanier-1/xbox.webp"
-                class="d-block mb-2 m-auto img-fluid"
-              />
-              <a
-                href="#"
-                class="d-block text-center text-decoration-underline fw-bold text-capitalize"
-                style="font-size: 13px; color: #0067b8"
-                >buy Xbox games and consoles</a
-              >
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="./imgas/contanier-1/windows.webp"
-                class="d-block mb-2 m-auto img-fluid"
-              />
-              <a
-                href="#"
-                class="d-block text-center text-decoration-underline fw-bold text-capitalize"
-                style="font-size: 13px; color: #0067b8"
-                >get windows 11</a
-              >
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="./imgas/contanier-1/keyboard.webp"
-                class="d-block mb-2 m-auto img-fluid"
-              />
-              <a
-                href="#"
-                class="d-block text-center text-decoration-underline fw-bold text-capitalize"
-                style="font-size: 13px; color: #0067b8"
-                >shop for accessories</a
-              >
-            </div>
-            <div class="col-lg-2 col-md-4 col-6">
-              <img
-                src="./imgas/contanier-1/bag.webp"
-                class="d-block mb-2 m-auto img-fluid"
-              />
-              <a
-                href="#"
-                class="d-block text-center text-decoration-underline fw-bold text-capitalize"
-                style="font-size: 13px; color: #0067b8"
-                >shop business</a
-              >
+            <div class="xbox-one col-xl-6 pe-5">
+              <h class="mb-4 fontH2">Xbox Series X</h>
+              <p class="mb-5 fontP">The fastest, most powerful Xbox ever</p>
+              <div>
+                <a
+                  href="#"
+                  style="
+                    background-color: #0067b8;
+                    font-size: 100%;
+                    color: whitesmoke;
+                  "
+                  class="p-3 rounded-3"
+                  >shop xbox series x</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end make container -->
-      <!--start make posts-->
-      <div class="container-fluid p-0 col-11">
-        <div class="posts mt-5 ">
-          <div class="row ">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <img class="img-fluid w-100" src="./imgas/posts/1.webp" />
-              <h2 class="text-capitalize fontH2">
-                save up to $400 on surface laptop 5
-              </h2>
-              <p class="fontP">
-                Sophisticated style and multitasking speed powered by 12th Gen
-                Intel® Core. Offer ends 6/18.
-              </p>
-              <a href="#" class="fw-bold text-capitalize"
-                >shop surface laptop 5
-                <i class="bi bi-chevron-right arrow arrowA"></i
-              ></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <img class="img-fluid w-100" src="./imgas/posts/2.webp" />
-              <h2 class="text-capitalize fontH2">
-                Up to $150 off select Surface Laptop Go 2
-              </h2>
-              <p class="fontP">
-                Work and play anywhere with the perfect balance of style,
-                portability, and performance. Offer ends 6/25.
-              </p>
-              <a href="#" class="fw-bold text-capitalize"
-                >shop surface laptop go 2
-                <i class="bi bi-chevron-right arrow arrowA"></i
-              ></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <img class=" img-fluid w-100" src="./imgas/posts/3.avif" />
-              <h2 class="text-capitalize fontH2">
-                Announcing the next wave of AI innovation
-              </h2>
-              <p class="fontP">
-                The new Microsoft Bing and Edge will soon feature more visual
-                search responses, chat history, and persistent chat within Edge.
-                We’re also adding actions to help people complete tasks.
-              </p>
-              <a href="#" class="fw-bold text-capitalize"
-                >learn more about it
-                <i class="bi bi-chevron-right arrow arrowA"></i
-              ></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-              <img class="img-fluid w-100" src="./imgas/posts/4.avif" />
-              <h2 class="text-capitalize fontH2">Power your dreams</h2>
-              <p class="fontP">
-                Introducing Xbox Series S in Carbon Black, now with a 1 TB
-                SSD.Experience next-gen speed and performance.
-              </p>
-              <a href="#" class="fw-bold text-capitalize"
-                >pre-order-now <i class="bi bi-chevron-right arrow arrowA"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--end make posts-->
-      <!--start xbox shop-->
-      <div class="xbox container-fluid col-11 p-0 mt-5">
-        <div
-          style="
-            background-image: url(./imgas/xbox/xbox.avif);
-            height: 90vh;
-            text-align: center;
-            margin-top: auto;
-            background-repeat: no-repeat;
-            background-size: cover;
-          "
-          class="xbox-one col-12 d-flex justify-content-center flex-column align-items-end"
-        >
-          <div class="xbox-one col-xl-6 pe-5"><h class="mb-4 fontH2">Xbox Series X</h>
-            <p class="mb-5 fontP">
-              The fastest, most powerful Xbox ever
-            </p>
-            <div >
+          <div class="buy mt-5">
+            <h class="mb-2 fontH2">Xbox Series X</h>
+            <p class="mb-4 fontP">The fastest, most powerful Xbox ever</p>
+            <div>
               <a
                 href="#"
                 style="
@@ -507,25 +751,8 @@
                 "
                 class="p-3 rounded-3"
                 >shop xbox series x</a
-              ></div>
-          </div>
-        </div>
-        <div class="buy mt-5">
-          <h class="mb-2 fontH2">Xbox Series X</h>
-            <p class="mb-4 fontP">
-              The fastest, most powerful Xbox ever
-            </p>
-            <div >
-              <a
-                href="#"
-                style="
-                  background-color: #0067b8;
-                  font-size: 100%;
-                  color: whitesmoke;
-                "
-                class="p-3 rounded-3"
-                >shop xbox series x</a
-              ></div>
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -534,22 +761,25 @@
       <div class="container-fluid mb-5 p-0 col-11">
         <h2 class="fontH2 pt-5 text-capitalize">for business</h2>
         <div class="posts mt-1">
-          <div class="row ">
+          <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
               <img class="img-fluid w-100" src="./imgas/post two/1.jpg" />
               <h2 class="text-capitalize fontH2">Surface Pro 9 for Business</h2>
-              <p class="fontP"> Get next-level security with Surface Pro 9 for Business and Windows 11 Pro to help ensure your information is protected. 
+              <p class="fontP">
+                Get next-level security with Surface Pro 9 for Business and
+                Windows 11 Pro to help ensure your information is protected.
               </p>
               <a href="#" class="fw-bold text-capitalize"
-                >show now
-                <i class="bi bi-chevron-right arrow arrowA"></i
+                >show now <i class="bi bi-chevron-right arrow arrowA"></i
               ></a>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
               <img class="img-fluid w-100" src="./imgas/post two/2.webp" />
-              <h2 class="text-capitalize fontH2">Try Microsoft 365 for free
-              </h2>
-              <p class="fontP"> Get Microsoft Teams, secure cloud storage, and premium apps across devices with a free one-month Microsoft 365 Business Standard trial. 
+              <h2 class="text-capitalize fontH2">Try Microsoft 365 for free</h2>
+              <p class="fontP">
+                Get Microsoft Teams, secure cloud storage, and premium apps
+                across devices with a free one-month Microsoft 365 Business
+                Standard trial.
               </p>
               <a href="#" class="fw-bold text-capitalize"
                 >star for free trial
@@ -559,7 +789,9 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
               <img class="img-fluid w-100" src="./imgas/post two/3.avif" />
               <h2 class="text-capitalize fontH2">Join the era of AI</h2>
-              <p class="fontP"> Create, communicate, and code with the latest Microsoft AI solutions. 
+              <p class="fontP">
+                Create, communicate, and code with the latest Microsoft AI
+                solutions.
               </p>
               <a href="#" class="fw-bold text-capitalize"
                 >explore al solutions
@@ -568,8 +800,12 @@
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
               <img class="img-fluid w-100" src="./imgas/post two/4.webp" />
-              <h2 class="text-capitalize fontH2">Welcome to your Windows 365 Cloud PC</h2>
-              <p class="fontP"> Securely stream your Windows experience from the Microsoft cloud to any device. 
+              <h2 class="text-capitalize fontH2">
+                Welcome to your Windows 365 Cloud PC
+              </h2>
+              <p class="fontP">
+                Securely stream your Windows experience from the Microsoft cloud
+                to any device.
               </p>
               <a href="#" class="fw-bold text-capitalize"
                 >get it today <i class="bi bi-chevron-right arrow arrowA"></i
@@ -642,11 +878,11 @@
       </div>
       <!--end slider two-->
       <!--start make footer-->
-      <footer class=" mt-5 p-0 " style="background-color: #F2F2F2;">
-        <div class=" container-fluid col-11 p-0 d-flex flex-wrap pt-4">
+      <footer class="mt-5 p-0" style="background-color: #f2f2f2">
+        <div class="container-fluid col-11 p-0 d-flex flex-wrap pt-4">
           <div class="col-xl-2 col-md-4 col-sm-6 col-12">
             <h2 class="fontul text-capitalize">new</h2>
-            <ul class=" list-unstyled fontli text-capitalize">
+            <ul class="list-unstyled fontli text-capitalize">
               <li class="pb-2">surface pro 9</li>
               <li class="pb-2">surface laptop 5</li>
               <li class="pb-2">surface studio 2+</li>
@@ -658,7 +894,7 @@
           </div>
           <div class="col-xl-2 col-md-4 col-sm-6 col-12">
             <h2 class="fontul text-capitalize">microsoft store</h2>
-            <ul class=" list-unstyled fontli text-capitalize">
+            <ul class="list-unstyled fontli text-capitalize">
               <li class="pb-2">account profile</li>
               <li class="pb-2">download center</li>
               <li class="pb-2">support microsoft store</li>
@@ -670,7 +906,7 @@
           </div>
           <div class="col-xl-2 col-md-4 col-sm-6 col-12">
             <h2 class="fontul text-capitalize">education</h2>
-            <ul class=" list-unstyled fontli text-capitalize">
+            <ul class="list-unstyled fontli text-capitalize">
               <li class="pb-2">microsoft education</li>
               <li class="pb-2">devices for education</li>
               <li class="pb-2">microsoft teams for education</li>
@@ -683,7 +919,7 @@
           </div>
           <div class="col-xl-2 col-md-4 col-sm-6 col-12">
             <h2 class="fontul text-capitalize">commercial</h2>
-            <ul class=" list-unstyled fontli text-capitalize">
+            <ul class="list-unstyled fontli text-capitalize">
               <li class="pb-2">microsoft could</li>
               <li class="pb-2">microsoft security</li>
               <li class="pb-2">azure</li>
@@ -696,7 +932,7 @@
           </div>
           <div class="col-xl-2 col-md-4 col-sm-6 col-12">
             <h2 class="fontul text-capitalize">developer and IT</h2>
-            <ul class=" list-unstyled fontli text-capitalize">
+            <ul class="list-unstyled fontli text-capitalize">
               <li class="pb-2">developer center</li>
               <li class="pb-2">documentation</li>
               <li class="pb-2">microsoft learn</li>
@@ -709,7 +945,7 @@
           </div>
           <div class="col-xl-2 col-md-4 col-sm-6 col-12">
             <h2 class="fontul text-capitalize">company</h2>
-            <ul class=" list-unstyled fontli text-capitalize">
+            <ul class="list-unstyled fontli text-capitalize">
               <li class="pb-2">vacancies</li>
               <li class="pb-2">privacy at microsoft</li>
               <li class="pb-2">investors</li>
@@ -717,23 +953,42 @@
             </ul>
           </div>
         </div>
-        <div class="container-fluid col-11 p-0 d-flex flex-wrap justify-content-center align-items-center ">
+        <div
+          class="container-fluid col-11 p-0 d-flex flex-wrap justify-content-center align-items-center"
+        >
           <div class="col-12 fontli text-left align-items-center">
-            <span style="font-size: 120%;"><i style="font-size: 150%;" class="bi bi-globe-americas"></i>  duth (the netherlands)</span>
+            <span style="font-size: 120%"
+              ><i style="font-size: 150%" class="bi bi-globe-americas"></i> duth
+              (the netherlands)</span
+            >
           </div>
           <div class="col-12 fontli text-left align-items-center mb-2">
-            <span style="font-size: 120%;" ><i style="color: #0067b8; font-size: 150%;" class="bi bi-ui-checks"></i>  your colifornia privacy choice</span>
+            <span style="font-size: 120%"
+              ><i
+                style="color: #0067b8; font-size: 150%"
+                class="bi bi-ui-checks"
+              ></i>
+              your colifornia privacy choice</span
+            >
           </div>
-          <ul class=" col-lg-10 offset-lg-1 d-flex flex-row flex-wrap list-unstyled">
-            <li class="w-auto mx-2  text-capitalize fontli">sitemap</li>
-            <li class="w-auto mx-2  text-capitalize fontli">contact microsoft</li>
-            <li class="w-auto mx-2  text-capitalize fontli">privacy</li>
-            <li class="w-auto mx-2  text-capitalize fontli">mange cookies</li>
-            <li class="w-auto mx-2  text-capitalize fontli">terms of use</li>
-            <li class="w-auto mx-2  text-capitalize fontli">trademarks</li>
-            <li class="w-auto mx-2  text-capitalize fontli">about our advertisements</li>
-            <li class="w-auto mx-2  text-capitalize fontli">EU compliance doCs</li>
-            <li class="w-auto mx-2  text-capitalize fontli">microsoft 365</li>
+          <ul
+            class="col-lg-10 offset-lg-1 d-flex flex-row flex-wrap list-unstyled"
+          >
+            <li class="w-auto mx-2 text-capitalize fontli">sitemap</li>
+            <li class="w-auto mx-2 text-capitalize fontli">
+              contact microsoft
+            </li>
+            <li class="w-auto mx-2 text-capitalize fontli">privacy</li>
+            <li class="w-auto mx-2 text-capitalize fontli">mange cookies</li>
+            <li class="w-auto mx-2 text-capitalize fontli">terms of use</li>
+            <li class="w-auto mx-2 text-capitalize fontli">trademarks</li>
+            <li class="w-auto mx-2 text-capitalize fontli">
+              about our advertisements
+            </li>
+            <li class="w-auto mx-2 text-capitalize fontli">
+              EU compliance doCs
+            </li>
+            <li class="w-auto mx-2 text-capitalize fontli">microsoft 365</li>
           </ul>
           <div class="col-1 fontli text-center pt-3">
             <p></p>

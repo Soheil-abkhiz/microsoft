@@ -15,40 +15,43 @@
 .bgMenu {
   background-color: #8b8b8b;
 }
-.arrow{
-    font-size: 30px;
-    color: #2b2b2b;
+.arrow {
+  font-size: 30px;
+  color: #2b2b2b;
 }
-.fontH2{
+.fontH2 {
   color: #000;
   font-size: 24px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.fontP{
+.fontP {
   color: #000;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.arrowA{
+.arrowA {
   font-size: 17px;
-  color: #0067AA;
+  color: #0067aa;
   font-weight: bold;
 }
-.fontul{
+.fontul {
   font-size: 16px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #6A6161;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #6a6161;
   font-weight: bold;
 }
-.fontli{
+.fontli {
   font-size: 12px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #6b6b66;
 }
-.sizeImage{
+.sizeImage {
   background-size: cover;
-  width:100%;
+  width: 100%;
 }
 @media screen and (min-width: 1400px) {
+  div.second-menu{
+    display: none;
+  }
   div.menu {
     width: 100%;
     .plMenu {
@@ -61,13 +64,16 @@
   div.slider {
     width: 100%;
   }
-  div.xbox{
-    >div.buy{
-      display:none;
+  div.xbox {
+    > div.buy {
+      display: none;
     }
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  div.second-menu{
+    display: none;
+  }
   div.menu {
     width: 100%;
     .plMenu {
@@ -80,26 +86,28 @@
   div.slider {
     width: 100%;
   }
-  div.devices{
+  div.devices {
     width: 100%;
   }
-  div.posts{
+  div.posts {
     width: 100%;
-    >h2{
+    > h2 {
       color: #2b2b2b;
     }
   }
-  div.container{
-    width:100% ;
-
+  div.container {
+    width: 100%;
   }
-  div.xbox{
-    >div.buy{
-      display:none;
+  div.xbox {
+    > div.buy {
+      display: none;
     }
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  div.second-menu{
+    display: none;
+  }
   div.menu {
     width: 100%;
     .plMenu {
@@ -111,17 +119,19 @@
   }
   div.slider {
     width: 100%;
-
   }
-  div.xbox{
-    >div{
-      >div.xbox-one{
+  div.xbox {
+    > div {
+      > div.xbox-one {
         display: none;
       }
     }
-}
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  div.second-menu{
+    display: none;
+  }
   div.menu {
     width: 100%;
     .plMenu {
@@ -134,55 +144,85 @@
   div.slider {
     width: 100%;
   }
-  div.xbox{
-    >div{
-      >div.xbox-one{
+  div.xbox {
+    > div {
+      > div.xbox-one {
         display: none;
       }
     }
-}
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .styleMenu{
+    background-color: #F2F2F2;
+    color: #2b2b2b;
+    border-bottom: solid 1px #E6E6E6;
+    text-transform: capitalize;
+  }
   div.menu {
-    width: 100%;
-    .plMenu {
-      padding-left: 100px !important;
+    display: none;
+  }
+  div.submenu{
+    >ul{
+      display: block;
     }
-    .prMenu {
-      padding-right: 80px !important;
+  }
+  div.left-menu>span.justifyMenu{
+    &:hover{
+      ~div.submenu>ul{ 
+        display: block;
+      }
+      }
     }
+  .z{
+    z-index: 101;
   }
   div.slider {
     width: 100%;
   }
-  div.xbox{
-    >div{
-      >div.xbox-one{
+  div.xbox {
+    > div {
+      > div.xbox-one {
         display: none;
       }
     }
-}
-}
-@media screen and (max-width: 576px) {
-  div.menu {
-    width: 100%;
-    .plMenu {
-      padding-left: 100px !important;
-    }
-    .prMenu {
-      padding-right: 80px !important;
-    }
   }
-  div.slider {
-    width: 100%;
+}
 
+@media screen and (max-width: 576px) {
+  .styleMenu{
+    background-color: #F2F2F2;
+    color: #2b2b2b;
+    border-bottom: solid 1px #E6E6E6;
+    text-transform: capitalize;
   }
-  div.xbox{
-    >div{
-      >div.xbox-one{
+  div.menu {
+    display: none;
+  }
+  div.submenu{
+    >ul{
+      display: block;
+    }
+  }
+  div.left-menu>span.justifyMenu{
+    &:hover{
+      ~div.submenu>ul{ 
+        display: block;
+      }
+      }
+    }
+  .z{
+    z-index: 101;
+  }
+  div.slider {
+    width: 100%;
+  }
+  div.xbox {
+    > div {
+      > div.xbox-one {
         display: none;
       }
     }
-}
+  }
 }

@@ -21,26 +21,26 @@
 .fontH2 {
   color: #000;
   font-size: 24px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 .fontP {
   color: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 .arrowA {
   font-size: 17px;
-  color: #0067AA;
+  color: #0067aa;
   font-weight: bold; }
 
 .fontul {
   font-size: 16px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #6A6161;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #6a6161;
   font-weight: bold; }
 
 .fontli {
   font-size: 12px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #6b6b66; }
 
 .sizeImage {
@@ -48,6 +48,8 @@
   width: 100%; }
 
 @media screen and (min-width: 1400px) {
+  div.second-menu {
+    display: none; }
   div.menu {
     width: 100%; }
     div.menu .plMenu {
@@ -60,6 +62,8 @@
     display: none; } }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
+  div.second-menu {
+    display: none; }
   div.menu {
     width: 100%; }
     div.menu .plMenu {
@@ -80,6 +84,8 @@
     display: none; } }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  div.second-menu {
+    display: none; }
   div.menu {
     width: 100%; }
     div.menu .plMenu {
@@ -92,6 +98,8 @@
     display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  div.second-menu {
+    display: none; }
   div.menu {
     width: 100%; }
     div.menu .plMenu {
@@ -104,24 +112,38 @@
     display: none; } }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .styleMenu {
+    background-color: #F2F2F2;
+    color: #2b2b2b;
+    border-bottom: solid 1px #E6E6E6;
+    text-transform: capitalize; }
   div.menu {
-    width: 100%; }
-    div.menu .plMenu {
-      padding-left: 100px !important; }
-    div.menu .prMenu {
-      padding-right: 80px !important; }
+    display: none; }
+  div.submenu > ul {
+    display: block; }
+  div.left-menu > span.justifyMenu:hover ~ div.submenu > ul {
+    display: block; }
+  .z {
+    z-index: 101; }
   div.slider {
     width: 100%; }
   div.xbox > div > div.xbox-one {
     display: none; } }
 
 @media screen and (max-width: 576px) {
+  .styleMenu {
+    background-color: #F2F2F2;
+    color: #2b2b2b;
+    border-bottom: solid 1px #E6E6E6;
+    text-transform: capitalize; }
   div.menu {
-    width: 100%; }
-    div.menu .plMenu {
-      padding-left: 100px !important; }
-    div.menu .prMenu {
-      padding-right: 80px !important; }
+    display: none; }
+  div.submenu > ul {
+    display: block; }
+  div.left-menu > span.justifyMenu:hover ~ div.submenu > ul {
+    display: block; }
+  .z {
+    z-index: 101; }
   div.slider {
     width: 100%; }
   div.xbox > div > div.xbox-one {
