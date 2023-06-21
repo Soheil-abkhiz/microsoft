@@ -49,7 +49,7 @@
   width: 100%;
 }
 @media screen and (min-width: 1400px) {
-  div.second-menu{
+  div.second-menu {
     display: none;
   }
   div.menu {
@@ -71,7 +71,7 @@
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  div.second-menu{
+  div.second-menu {
     display: none;
   }
   div.menu {
@@ -105,7 +105,7 @@
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  div.second-menu{
+  div.second-menu {
     display: none;
   }
   div.menu {
@@ -129,7 +129,7 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  div.second-menu{
+  div.second-menu {
     display: none;
   }
   div.menu {
@@ -154,74 +154,76 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .styleMenu{
-    background-color: #F2F2F2;
+  .styleMenu {
+    background-color: #f2f2f2;
     color: #2b2b2b;
-    border-bottom: solid 1px #E6E6E6;
+    border-bottom: solid 1px #e6e6e6;
     text-transform: capitalize;
   }
   div.menu {
     display: none;
   }
-  div.submenu{
-    >ul{
-      display: block;
-    }
+  div.subMenu {
+    display: none;
   }
-  div.left-menu>span.justifyMenu{
-    &:hover{
-      ~div.submenu>ul{ 
-        display: block;
-      }
-      }
-    }
-  .z{
-    z-index: 101;
-  }
-  div.slider {
-    width: 100%;
-  }
-  div.xbox {
-    > div {
-      > div.xbox-one {
-        display: none;
-      }
+}
+div.slider {
+  width: 100%;
+}
+div.xbox {
+  > div {
+    > div.xbox-one {
+      display: none;
     }
   }
 }
 
 @media screen and (max-width: 576px) {
-  .styleMenu{
-    background-color: #F2F2F2;
+  div.xbox-one {
+    background-image: url(./imgas/xbox/xbox.avif);
+    
+    height:50vh;
+    text-align: center;
+    margin-top: auto;
+    background-repeat: no-repeat;
+    background-size:contain;
+  }
+  .styleMenu {
+    background-color: #f2f2f2;
     color: #2b2b2b;
-    border-bottom: solid 1px #E6E6E6;
+    border-bottom: solid 1px #e6e6e6;
     text-transform: capitalize;
   }
   div.menu {
     display: none;
   }
-  div.submenu{
-    >ul{
-      display: block;
-    }
+  div.subMenu {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    transition: 300ms;
+    left: 0;
   }
-  div.left-menu>span.justifyMenu{
-    &:hover{
-      ~div.submenu>ul{ 
+  > li.liMenu {
+    transition: 300ms;
+  }
+  .liMenu {
+    &:hover {
+      div.subMenu {
         display: block;
       }
-      }
     }
-  .z{
-    z-index: 101;
-  }
-  div.slider {
-    width: 100%;
-  }
-  div.xbox {
-    > div {
-      > div.xbox-one {
-        display: none;
+    .z {
+      z-index: 101;
+    }
+    div.slider {
+      width: 100%;
+    }
+    div.xbox {
+      > div {
+        > div.xbox-one {
+          display: none;
+        }
       }
     }
   }
